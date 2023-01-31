@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./mobile.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script src="https://kit.fontawesome.com/d5d39d4b05.js" crossorigin="anonymous"></script>
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <main>
+
+    <header>
+      <div>
+        <p id="header-p1"> Notifications <span class="header-span"></span></p>
+      </div>
+      <div>
+        <button id="header-p2"> Mark all as read</button>
+      </div>
+    </header>
+
+    <section>
+
+      <div class="main-container unread">
+        <div class="container-1">
+        <p><img class="dp" src="./assets/images/avatar-mark-webber.webp" alt="mark-webber-display-picture"></p>
+      </div>
+      <div class="container-2">
+        <div class="conatiner-2-sub">
+        <p> <span class="name">Mark Webber</span> <span class="action">reacted to your recent post</span> <span class="activity">My first tournament today!</span><i class="fa-solid fa-circle fa-2xs"></i></p>
+        <!-- <p class="dot"></p> -->
+      </div>
+        <p class="cnt2-p2 color">1m ago</p>
+      </div>
+      </div>
+
+      <div class="main-container unread">
+        <div class="container-1">
+          <p><img class="dp" src="./assets/images/avatar-angela-gray.webp" alt="angela-gray-display-picture"></p>
+        </div>
+        <div class="container-2">
+          <div class="conatiner-2-sub">
+            <p> <span class="name">Angela Gray</span><span class="action"> followed you</span> <i class="fa-solid fa-circle fa-2xs"></i></p>
+            <!-- <p class="dot"></p> -->
+          </div>
+          <p class="color">5m ago</p>
+        </div>
+      </div>
+
+      <div class="main-container unread">
+        <div class="container-1">
+          <p><img class="dp" src="./assets/images/avatar-jacob-thompson.webp" alt="jacob-thompson-display-picture"></p>
+        </div>
+        <div class="container-2">
+          <div class="conatiner-2-sub">
+            <p><span class="name">Jacob Thompson</span> <span class="action">has joined your group </span><span class="activity">Chess Club</span> <i class="fa-solid fa-circle fa-2xs"></i></p>
+            <!-- <p class="dot"></p> -->
+          </div>
+          <p class="color">1 day ago</p>
+        </div>
+      </div>
+
+      <div class="container">
+      <div class="main-container read">
+        <div class="container-1">
+          <p><img class="dp" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="rizky-display-picture"></p>
+        </div>
+        <div class="container-2">
+          <div>
+          <p><span class="name">Rizky Hasanuddin</span><span class="action"> sent you a private message</span></p>
+        </div>
+          <p class="color">5 days ago</p>
+        </div>
+      </div>
+      <div class="container-3">
+        <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</p>
+      </div>
+    </div>
+
+      <div class="main-container read">
+        <div class="container-1">
+          <p><img class="dp" src="./assets/images/avatar-kimberly-smith.webp" alt="kimberly-display-picture"></p>
+        </div>
+        <div class="use">
+        <div class="container-2">
+          <div>
+          <p><span class="name">Kimberly Smith</span> <span class="action">commented on your picture</span></p>
+        </div>
+          <p class="color">1 week ago</p>
+        </div>
+        <div>
+          <p><img class="dp move" src="./assets/images/image-chess.webp" alt=""></p>
+        </div>
+      </div>
+    </div>
+
+      <div class="main-container read">
+        <div class="container-1">
+          <p><img class="dp" src="./assets/images/avatar-nathan-peterson.webp" alt="natan-peter-display-picture"></p>
+        </div>
+        <div class="container-2">
+          <div>
+        <p><span class="name">Nathan Peterson</span> <span class="action">reacted to your recent post</span> <span class="action2">5 end-game strategies to increase your win rate</span></p>
+      </div>
+        <p class="color">2 weeks ago</p>
+      </div>
+      </div>
+
+      <div class="main-container read">
+        <div class="container-1">
+          <p><img src="./assets/images/avatar-anna-kim.webp" alt="anna-kim-display-picture" class="dp"></p>
+        </div>
+        <div class="container-2">
+          <div>
+        <p><span class="name">Anna Kim</span><span class="action"> left the group</span><span class="activity"> Chess Club</span></p>
+      </div>
+        <p class="color">2 weeks ago</p>
+      </div>
+      </div>
+
+
+
+    </section>
+
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

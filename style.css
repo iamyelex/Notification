@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+    --red : hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    /* NEUTRAL */
+    --white: hsl(0, 0%, 100%);
+    --lightgrayishblue: hsl(210, 60%, 98%);
+    --lightgrayishblue-1: hsl(211, 68%, 94%);
+    --lightgrayishblue-2: hsl(205, 33%, 90%);
+    --grayishblue: hsl(219, 14%, 63%);
+    --darkgrayishblue: hsl(219, 12%, 42%);
+    --darkblue: hsl(224, 21%, 14%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--lightgrayishblue);
+    font-size: 16px;
+}
+
+main{
+    width: 50%;
+    /* height: 100vh; */
+    margin: 0 auto;
+    margin-top: 3rem;
+    background: var(--white);
+    padding: 2rem 2rem 0.5rem;
+}
+
+/* HEADER  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 1.25rem;
+}
+#header-p1{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-weight: 800;
+    color: var(--darkblue);
+}
+.header-span{
+    color: var(--white);
+    background-color: var(--blue); 
+    font-size: 12px;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    margin-left: 0.25rem;
+    font-weight: 500;
+}
+#header-p2{
+    font-size: 12px;
+    opacity: 0.8;
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+    color: var(--blue);
+}
+#header-p2:hover{
+    opacity: 1;
+}
+
+/* SECTION  */
+.main-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    /* padding: 0.5rem 1rem; */
+}
+
+/* first div  */
+.container-1{
+    margin-right: 1rem;
+}
+
+/* second div  */
+.conatiner-2-sub{
+    display: flex;
+    align-items: center;
+}
+.name{
+    font-weight: 800;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    color: var(--darkblue);
+    cursor: pointer;
+}
+.activity{
+    font-weight: 800;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--darkblue);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* CONTAINER-3 - not all div has it  */
+.container{
+    margin-bottom: 0.5rem;
+}
+.container-3{
+    border: 1px solid var(--grayishblue);
+    width: 75%;
+    margin-left: 4rem;
+    padding: 0.75rem;
+    font-weight: 500;
+    font-family: 'plus Jakarta Sans', sans-serif;
+    color: var(--darkgrayishblue);
+    cursor: pointer;
+}
+
+/* UNREAD */
+.unread{
+    padding: 0.5rem 1rem;
+    background-color: var(--lightgrayishblue);
+    border-radius: 0.5rem;
+}
+
+/* READ  */
+.read{
+    padding: 0.5rem 1rem 0;
+}
+
+/* DISPLAY PICTURE  */
+.dp{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ACTION */
+.action{
+    color: var(--darkgrayishblue);
+}
+.action2{
+    color: var(--grayishblue);
+    font-weight: 500;
+}
+
+/* NOTIFICATION DOT  */
+.fa-solid{
+    color: var(--red);
+    margin-left: 0.25rem;
+}
+
+/* HIDDEN  */
+.hidden{
+    display: none;
+}
+
+
+/* OTHERS  */
+.use{
+    display: flex;
+    justify-content:center;
+}
+
+.move{
+    margin-left: 9.5rem;
+}
+.color{
+    color: var(--darkgrayishblue);
+    margin-top: 0.25rem;
+}
