@@ -5,6 +5,7 @@ const mainContainer = document.querySelectorAll(".main-container");
 const dot = document.querySelectorAll('i');
 const notificationNumber = document.querySelector('.header-span');
 const conatiner3 = document.querySelector('.container-3')
+const conatiner = document.querySelector('.container')
 
 // USING THE READ ALL BUTTON 
 markAllRead.addEventListener('click', function(){
@@ -46,8 +47,6 @@ ctn.addEventListener('click', function() {
     if(ctn.classList.contains('unread')){
         result++
         notificationNumber.textContent = result;
-        conatiner3.classList.toggle('hidden');
-
         if(result > 0) {
             notificationNumber.classList.remove('hidden')
         }; 
@@ -56,8 +55,11 @@ ctn.addEventListener('click', function() {
     if(ctn.classList.contains('read')){
         result--
         notificationNumber.textContent = result;
-        conatiner3.classList.toggle('hidden');
         if(result === 0) notificationNumber.classList.add('hidden');
-        nathan.style.display = 'block';
     }
 }))
+
+// DROP DOWN NOTIFICATION 
+conatiner.addEventListener('click', function(){
+    conatiner3.classList.toggle('hidden');
+})
