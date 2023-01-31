@@ -4,6 +4,7 @@ const markAllRead = document.querySelector("#header-p2");
 const mainContainer = document.querySelectorAll(".main-container");
 const dot = document.querySelectorAll('i');
 const notificationNumber = document.querySelector('.header-span');
+const conatiner3 = document.querySelector('.container-3')
 
 // USING THE READ ALL BUTTON 
 markAllRead.addEventListener('click', function(){
@@ -20,6 +21,9 @@ markAllRead.addEventListener('click', function(){
     notificationNumber.textContent = result;
     // console.log(notificationNumber);
     notificationNumber.classList.add('hidden');
+
+    // display hidden drop down
+    conatiner3.classList.remove('hidden');
 })
 
 // CALCULATING NUMBER OF NOTIFICATIONS 
@@ -42,6 +46,7 @@ ctn.addEventListener('click', function() {
     if(ctn.classList.contains('unread')){
         result++
         notificationNumber.textContent = result;
+        conatiner3.classList.toggle('hidden');
 
         if(result > 0) {
             notificationNumber.classList.remove('hidden')
@@ -51,12 +56,8 @@ ctn.addEventListener('click', function() {
     if(ctn.classList.contains('read')){
         result--
         notificationNumber.textContent = result;
+        conatiner3.classList.toggle('hidden');
         if(result === 0) notificationNumber.classList.add('hidden');
+        nathan.style.display = 'block';
     }
 }))
-
-
-
-const a = document.querySelector('.fa-solid');
-
-console.log(a);
