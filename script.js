@@ -17,7 +17,7 @@ markAllRead.addEventListener('click', function(){
     }
       });
     
-    dot.forEach((dot)=> dot.style.display = "none");
+    dot.forEach((dot)=> dot.style.visibility = "hidden");
     result = 0;
     notificationNumber.textContent = result;
     // console.log(notificationNumber);
@@ -62,4 +62,14 @@ ctn.addEventListener('click', function() {
 // DROP DOWN NOTIFICATION 
 conatiner.addEventListener('click', function(){
     conatiner3.classList.toggle('hidden');
+})
+
+// REMOVING AND ADDING NOTIFICATION DOT ON CLICK 
+dot.forEach((dot, n)=> {
+const closest = dot.closest('.main-container')
+if (closest) closest.addEventListener('click', function(){
+    dot.style.visibility = 'hidden';  
+
+if (closest.classList.contains('unread')) dot.style.visibility = 'visible';
+})
 })
